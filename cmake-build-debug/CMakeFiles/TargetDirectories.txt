@@ -1,0 +1,3 @@
+/Users/zyoko/SmallMemoryAllocator/cmake-build-debug/CMakeFiles/SmallMemoryAllocator.dir
+/Users/zyoko/SmallMemoryAllocator/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/zyoko/SmallMemoryAllocator/cmake-build-debug/CMakeFiles/rebuild_cache.dir
