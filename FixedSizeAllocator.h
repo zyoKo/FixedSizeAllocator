@@ -5,12 +5,7 @@
 #ifndef ALLOCATOR_H
 #define ALLOCATOR_H
 
-#include <memory>
-
 #include "Core.h"
-
-//#define MAX_MEMORY 2048U
-//static unsigned char MAIN_MEMORY[MAX_MEMORY];
 
 // MainMemory: Block of data used to keep memory around until the end
 // Block: MainMemory divided into blocks of bytes
@@ -25,14 +20,16 @@ namespace CustomAllocator
 
         static FixedSizeAllocator& GetInstance();
 
-        void* Allocate();
+        void Allocate();
 
         void DeAllocate(void* block);
+
+        [[nodiscard]] void* RequestChunk();
 
         void Reset();
 
     public:
-        // Explicitly deleting all copy and move constructors because it's a singleton
+        // Explicitly deleting all copy and move constructors
         explicit FixedSizeAllocator() = delete;
         explicit FixedSizeAllocator(FixedSizeAllocator&) = delete;
         explicit FixedSizeAllocator(FixedSizeAllocator&&) = delete;
@@ -43,13 +40,13 @@ namespace CustomAllocator
         static std::unique_ptr<FixedSizeAllocator> instance;
 
         U_CHAR* mainMemory;
-        U_CHAR* lastFreeBlock;
+
+        std::stack<void*> sChunks;
 
         U_INT numOfBlocks;
         U_INT blockSizeInBytes;
-        U_INT numOfAvailableBlocks;
 
-        // TODO: better to divide allocationSize to (blockSize and chunkSize)
+        // Explicit constructor
         explicit FixedSizeAllocator(U_INT numOfBlocks, U_INT chunkSizeInBytes);
     };
 }

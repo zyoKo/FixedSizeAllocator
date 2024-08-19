@@ -1,3 +1,6 @@
 # ninja log v6
-3	341	1723861029359933214	CMakeFiles/SmallMemoryAllocator.dir/main.cpp.o	299f2a4b84aac29e
-341	428	1723861029697892640	SmallMemoryAllocator	1c29b16556136110
+3	51	1724024446136126224	build.ninja	954bf6d4f4264758
+4	209	1724022676791026592	CMakeFiles/SmallMemoryAllocator.dir/main.cpp.o	9e0fd13ae21934ac
+345	424	1724022355969025319	SmallMemoryAllocator	596cfdf58f8cbc2c
+4	345	1724022355627978273	CMakeFiles/SmallMemoryAllocator.dir/FixedSizeAllocator.cpp.o	a07524d965c05826
+7	699	1724022577428291803	CMakeFiles/SmallMemoryAllocator.dir/cmake_pch_arm64.hxx.pch	b3d5c57f7fdf5358

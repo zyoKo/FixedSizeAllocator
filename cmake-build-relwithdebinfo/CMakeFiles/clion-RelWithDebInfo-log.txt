@@ -1,0 +1,7 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -G Ninja -S /Users/zyoko/SmallMemoryAllocator -B /Users/zyoko/SmallMemoryAllocator/cmake-build-relwithdebinfo
+Apple System Detected!
+-- Suitable compiler not found. Only support for GCC and MSVC.
+-- ReleaseWithDebugInfo Configuration Enabled
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/zyoko/SmallMemoryAllocator/cmake-build-relwithdebinfo
